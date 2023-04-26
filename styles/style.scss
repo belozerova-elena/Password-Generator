@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+$poppins: 'Poppins', sans-serif;
+// COLORS
+$white: #fff;
+$black: #222;
+$blue: #00bbf0;
+$dark: #005792;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: $poppins;
+  font-size: 18px;
+  color: $black;
+  background-color: $blue;
+}
+
+.password-generator {
+  width: 350px;
+  padding: 20px;
+  background-color: $white;
+  border-radius: 20px;
+  &__password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 20px;
+  }
+  &__options {
+    padding: 20px 0;
+  }
+  &__options-description {
+    font-weight: 500;
+  }
+  &__options-length {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 20px 0;
+  }
+  &__options-length--input {
+    height: 26px;
+    width: 60px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 15px;
+    outline: none;
+  }
+  &__options-length--range {
+    width: 220px;
+    height: 15px;
+    background-color: $blue;
+    border-radius: 15px;
+    appearance: none;
+    outline: none;
+    overflow: hidden;
+    &::-webkit-slider-thumb {
+      width: 15px;
+      height: 15px;
+      appearance: none;
+      background-color: $white;
+      border-radius: 50%;
+      border: 2px solid $dark;
+      box-shadow: -407px 0 0 400px $dark;
+      cursor: pointer;    
+    }
+  }
+  &__options-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    padding-bottom: 10px;
+  }
+  &__options-checkbox--label {
+    cursor: pointer;
+  }
+  &__options-checkbox--input {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+  &__button-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background-color: $blue;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: $white;
+      background-color: $dark;
+    }
+  }
+}

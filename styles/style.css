@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #222;
+  background-color: #00bbf0;
+}
+
+.password-generator {
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.password-generator__password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.password-generator__options {
+  padding: 20px 0;
+}
+
+.password-generator__options-description {
+  font-weight: 500;
+}
+
+.password-generator__options-length {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0 20px 0;
+}
+
+.password-generator__options-length--input {
+  height: 26px;
+  width: 60px;
+  padding-left: 10px;
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  outline: none;
+}
+
+.password-generator__options-length--range {
+  width: 220px;
+  height: 15px;
+  background-color: #00bbf0;
+  border-radius: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  overflow: hidden;
+}
+
+.password-generator__options-length--range::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  -webkit-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #005792;
+  -webkit-box-shadow: -407px 0 0 400px #005792;
+          box-shadow: -407px 0 0 400px #005792;
+  cursor: pointer;
+}
+
+.password-generator__options-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.password-generator__options-checkbox--label {
+  cursor: pointer;
+}
+
+.password-generator__options-checkbox--input {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.password-generator__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.password-generator__button-btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background-color: #00bbf0;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.password-generator__button-btn:hover {
+  color: #fff;
+  background-color: #005792;
+}
+/*# sourceMappingURL=style.css.map */
