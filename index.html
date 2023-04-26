@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="password-generator">
+    <div class="password-generator__password js-password"></div>
+    <div class="password-generator__options">
+      <span class="password-generator__options-description">Password length</span>
+      <div class="password-generator__options-length">
+        <input type="number" min="5" max="20" step="1" value="5" class="password-generator__options-length--input js-length-input">
+        <input type="range" min="5" max="20" step="1" value="5" class="password-generator__options-length--range js-length-range">
+      </div>
+      <div class="password-generator__options-checkbox">
+        <label for="uppercase-letters" class="password-generator__options-checkbox--label">Uppercase letters</label>
+        <input type="checkbox" id="uppercase-letters" class="password-generator__options-checkbox--input js-uppercase-letters">
+      </div>
+      <div class="password-generator__options-checkbox">
+        <label for="lower-letters" class="password-generator__options-checkbox--label">Lower letters</label>
+        <input type="checkbox" id="lower-letters" class="password-generator__options-checkbox--input js-lower-letters">
+      </div>
+
+      <div class="password-generator__options-checkbox">
+        <label for="number" class="password-generator__options-checkbox--label">Numbers</label>
+        <input type="checkbox" id="number" class="password-generator__options-checkbox--input js-numbers">
+      </div>
+      <div class="password-generator__options-checkbox">
+        <label for="symbols" class="password-generator__options-checkbox--label">Symbols</label>
+        <input type="checkbox" id="symbols" class="password-generator__options-checkbox--input js-symbols">
+      </div>
+    </div>
+    <div class="password-generator__button">
+      <button class="password-generator__button-btn js-btn">Generate</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
